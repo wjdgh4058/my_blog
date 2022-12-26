@@ -1,0 +1,27 @@
+.wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .wrap {
+    min-height: -webkit-fill-available;
+  }
+}
+
+main {
+  background: slateblue;
+  flex-grow: 1;
+  padding-top: 5em;
+}
+
+footer {
+  background: skyblue;
+  height: 5em;
+}
+
+.max-width {
+  width: min(calc(var(--max-width) * 1rem), calc(100% - 10vw));
+  margin: auto;
+}

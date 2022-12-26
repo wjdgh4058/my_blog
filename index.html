@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/00_reset.css" />
+    <link rel="stylesheet" href="./css/00_common.css" />
+    <link rel="stylesheet" href="./css/01_layout.css" />
+    <link rel="stylesheet" href="./css/02_header.css" />
+  </head>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/00_reset.css">
-  <link rel="stylesheet" href="./css/00_common.css">
-</head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header>
+        <div class="max-width">
+          <!-- logo -->
+          <h1>
+            <a href="#">
+              <img src="./img/logo.svg" alt="My Blog" />
+            </a>
+          </h1>
+          <!-- //logo -->
 
-<body>
-  <!--
+          <!-- search -->
+          <form class="search-form">
+            <label for="search" class="sr-only">검색</label>
+            <input type="text" id="search" />
+            <button type="submit">
+              <img src="./img/icon-search.svg" alt="검색" />
+            </button>
+          </form>
+          <!-- //search -->
+
+          <!-- profile button -->
+          <button class="profile-btn" type="button">
+            <img src="./img/profile.jpg" alt="프로필 보기" />
+          </button>
+          <!-- //profile button -->
+        </div>
+      </header>
+      <!-- //header -->
+      <main>
+        <div class="max-width">main</div>
+      </main>
+      <footer>
+        <div class="max-width">footer</div>
+      </footer>
+    </div>
+    <!--
   Best Post
   How to : KICKFLIP SKATEBOARD TRICK TIP
   READ
@@ -64,6 +102,5 @@
 
   Copyright 2022. 이름 All rights reserved.
 -->
-</body>
-
+  </body>
 </html>
