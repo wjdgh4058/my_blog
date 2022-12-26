@@ -12,6 +12,7 @@
 
 .grid-section .title {
   grid-area: title;
+  padding-right: 4.8rem;
 }
 
 .grid-section .title h3 {
@@ -53,6 +54,10 @@
   background: var(--c-light-gray);
 }
 
+.video {
+  padding: 10rem 0;
+}
+
 .video .max-width {
   grid-template:
     'post title' auto
@@ -64,5 +69,46 @@
   .grid-section .max-width {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.post-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.post-list .content {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5px;
+}
+
+@media (max-width: 1024px) {
+  .grid-section .max-width {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .lastest {
+    padding: 12rem 0 5rem;
+  }
+  .video {
+    padding: 5rem 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-section .more {
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .grid-section .more {
+    margin: auto;
+    padding: 0.6em 2em;
   }
 }
