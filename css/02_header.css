@@ -5,6 +5,7 @@ header {
   left: 0;
   width: 100%;
   display: flex;
+  z-index: 100;
 }
 
 header .max-width {
@@ -34,15 +35,18 @@ header h1 {
 }
 
 .search-form {
+  flex: 0 0 20rem;
   position: relative;
 }
 .search-form input {
+  width: 100%;
   background: none;
   border: 1px solid rgba(var(--rgb-light), 0.5);
   height: 4.4rem;
   border-radius: 2.2rem;
   padding: 0 1em;
   color: rgb(var(--rgb-light));
+  box-sizing: border-box;
   /* color: #fff; */
   opacity: 0.5;
   transition: all 0.3s;

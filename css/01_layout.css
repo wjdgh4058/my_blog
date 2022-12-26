@@ -10,12 +10,6 @@
   }
 }
 
-main {
-  background: slateblue;
-  flex-grow: 1;
-  padding-top: 5em;
-}
-
 footer {
   background: skyblue;
   height: 5em;
