@@ -85,6 +85,8 @@
   -webkit-box-orient: vertical;
 }
 
+/* 모바일 레이아웃 */
+/* 다시한번 해보기 */
 @media (max-width: 640px) {
   .best h2,
   .best .read {
