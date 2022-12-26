@@ -84,3 +84,32 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+
+@media (max-width: 640px) {
+  .best h2,
+  .best .read {
+    flex-basis: auto;
+  }
+  .best {
+    width: calc(100% - 5vw);
+    padding: 0 0 0 5vw;
+    margin: -7rem 0 -7rem auto;
+  }
+  .best a {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.4rem;
+    border-radius: 7rem 0 0 7rem;
+    padding: 0.5em 5vw 0 10vw;
+    text-align: left;
+  }
+  .best .read {
+    align-self: flex-end;
+    padding-right: 5em;
+  }
+  .best .title {
+    text-align: left;
+    width: 100%;
+  }
+}
