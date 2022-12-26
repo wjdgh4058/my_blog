@@ -6,6 +6,9 @@ header {
   width: 100%;
   display: flex;
   z-index: 100;
+  background: rgba(var(--rgb-dark), 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 header .max-width {
