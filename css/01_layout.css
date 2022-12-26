@@ -10,11 +10,6 @@
   }
 }
 
-footer {
-  background: skyblue;
-  height: 5em;
-}
-
 .max-width {
   width: min(calc(var(--max-width) * 1rem), calc(100% - 10vw));
   margin: auto;
